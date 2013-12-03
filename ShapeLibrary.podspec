@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { 'Felipe Saint-Jean' => 'fsaint@gmail.com' }
   s.source       = { :git => 'https://github.com/fsaint/QuartzShapes.git' }
 
-  s.source_files = 'ShapeLibrary/*.{h,m}'
+  s.source_files = 'Classes/*.{h,m}'
 
   s.requires_arc = true
 end
