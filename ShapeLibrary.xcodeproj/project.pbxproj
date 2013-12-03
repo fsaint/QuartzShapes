@@ -20,11 +20,11 @@
 		B50613B417552CC100D7C9A2 /* SHPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50613B317552CC100D7C9A2 /* SHPViewController.m */; };
 		B53113DB176E2AF800E5DF31 /* SHPThemeScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53113DA176E2AF800E5DF31 /* SHPThemeScrollController.m */; };
 		B53113DD176E2B8400E5DF31 /* SHPThemeScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53113DC176E2B8400E5DF31 /* SHPThemeScrollController.xib */; };
-		B53113E0176E2E1C00E5DF31 /* SHPTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B53113DF176E2E1C00E5DF31 /* SHPTheme.m */; };
 		B57F248D1760E006000FC1C4 /* SHPGererator.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F248C1760E006000FC1C4 /* SHPGererator.m */; };
-		B57F24911760EE10000FC1C4 /* SHPSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F24901760EE10000FC1C4 /* SHPSelectorController.m */; };
-		B57F24941760EF18000FC1C4 /* SHPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F24931760EF18000FC1C4 /* SHPCell.m */; };
-		B57F24971760EFEF000FC1C4 /* SHPLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F24961760EFEF000FC1C4 /* SHPLayout.m */; };
+		B5B39D32184E85C3000D1282 /* SHPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D2A184E85C3000D1282 /* SHPCell.m */; };
+		B5B39D33184E85C3000D1282 /* SHPLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D2D184E85C3000D1282 /* SHPLayout.m */; };
+		B5B39D34184E85C3000D1282 /* SHPSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D2F184E85C3000D1282 /* SHPSelectorController.m */; };
+		B5B39D35184E85C3000D1282 /* SHPTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D31184E85C3000D1282 /* SHPTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,17 +47,17 @@
 		B53113D9176E2AF800E5DF31 /* SHPThemeScrollController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPThemeScrollController.h; sourceTree = "<group>"; };
 		B53113DA176E2AF800E5DF31 /* SHPThemeScrollController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPThemeScrollController.m; sourceTree = "<group>"; };
 		B53113DC176E2B8400E5DF31 /* SHPThemeScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHPThemeScrollController.xib; sourceTree = "<group>"; };
-		B53113DE176E2E1C00E5DF31 /* SHPTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPTheme.h; sourceTree = "<group>"; };
-		B53113DF176E2E1C00E5DF31 /* SHPTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPTheme.m; sourceTree = "<group>"; };
-		B53113E1176F495300E5DF31 /* SHPGlobals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPGlobals.h; sourceTree = "<group>"; };
 		B57F248B1760E006000FC1C4 /* SHPGererator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPGererator.h; sourceTree = "<group>"; };
 		B57F248C1760E006000FC1C4 /* SHPGererator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPGererator.m; sourceTree = "<group>"; };
-		B57F248F1760EE10000FC1C4 /* SHPSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPSelectorController.h; sourceTree = "<group>"; };
-		B57F24901760EE10000FC1C4 /* SHPSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPSelectorController.m; sourceTree = "<group>"; };
-		B57F24921760EF18000FC1C4 /* SHPCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPCell.h; sourceTree = "<group>"; };
-		B57F24931760EF18000FC1C4 /* SHPCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPCell.m; sourceTree = "<group>"; };
-		B57F24951760EFEF000FC1C4 /* SHPLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPLayout.h; sourceTree = "<group>"; };
-		B57F24961760EFEF000FC1C4 /* SHPLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPLayout.m; sourceTree = "<group>"; };
+		B5B39D29184E85C3000D1282 /* SHPCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPCell.h; sourceTree = "<group>"; };
+		B5B39D2A184E85C3000D1282 /* SHPCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPCell.m; sourceTree = "<group>"; };
+		B5B39D2B184E85C3000D1282 /* SHPGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPGlobals.h; sourceTree = "<group>"; };
+		B5B39D2C184E85C3000D1282 /* SHPLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPLayout.h; sourceTree = "<group>"; };
+		B5B39D2D184E85C3000D1282 /* SHPLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPLayout.m; sourceTree = "<group>"; };
+		B5B39D2E184E85C3000D1282 /* SHPSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPSelectorController.h; sourceTree = "<group>"; };
+		B5B39D2F184E85C3000D1282 /* SHPSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPSelectorController.m; sourceTree = "<group>"; };
+		B5B39D30184E85C3000D1282 /* SHPTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPTheme.h; sourceTree = "<group>"; };
+		B5B39D31184E85C3000D1282 /* SHPTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPTheme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +104,7 @@
 		B506139D17552CC100D7C9A2 /* ShapeLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B5B39D28184E85C3000D1282 /* Classes */,
 				B53113D8176E2ABE00E5DF31 /* ThemeScroll */,
 				B57F248A1760DFCC000FC1C4 /* ShapeGeneratro */,
 				B50613A617552CC100D7C9A2 /* SHPAppDelegate.h */,
@@ -111,16 +112,7 @@
 				B50613AF17552CC100D7C9A2 /* MainStoryboard.storyboard */,
 				B50613B217552CC100D7C9A2 /* SHPViewController.h */,
 				B50613B317552CC100D7C9A2 /* SHPViewController.m */,
-				B57F248F1760EE10000FC1C4 /* SHPSelectorController.h */,
-				B57F24901760EE10000FC1C4 /* SHPSelectorController.m */,
-				B57F24951760EFEF000FC1C4 /* SHPLayout.h */,
-				B57F24961760EFEF000FC1C4 /* SHPLayout.m */,
-				B57F24921760EF18000FC1C4 /* SHPCell.h */,
-				B57F24931760EF18000FC1C4 /* SHPCell.m */,
 				B506139E17552CC100D7C9A2 /* Supporting Files */,
-				B53113DE176E2E1C00E5DF31 /* SHPTheme.h */,
-				B53113DF176E2E1C00E5DF31 /* SHPTheme.m */,
-				B53113E1176F495300E5DF31 /* SHPGlobals.h */,
 			);
 			path = ShapeLibrary;
 			sourceTree = "<group>";
@@ -157,6 +149,22 @@
 			);
 			name = ShapeGeneratro;
 			sourceTree = "<group>";
+		};
+		B5B39D28184E85C3000D1282 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B5B39D29184E85C3000D1282 /* SHPCell.h */,
+				B5B39D2A184E85C3000D1282 /* SHPCell.m */,
+				B5B39D2B184E85C3000D1282 /* SHPGlobals.h */,
+				B5B39D2C184E85C3000D1282 /* SHPLayout.h */,
+				B5B39D2D184E85C3000D1282 /* SHPLayout.m */,
+				B5B39D2E184E85C3000D1282 /* SHPSelectorController.h */,
+				B5B39D2F184E85C3000D1282 /* SHPSelectorController.m */,
+				B5B39D30184E85C3000D1282 /* SHPTheme.h */,
+				B5B39D31184E85C3000D1282 /* SHPTheme.m */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -226,15 +234,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B39D35184E85C3000D1282 /* SHPTheme.m in Sources */,
 				B50613A417552CC100D7C9A2 /* main.m in Sources */,
 				B50613A817552CC100D7C9A2 /* SHPAppDelegate.m in Sources */,
+				B5B39D34184E85C3000D1282 /* SHPSelectorController.m in Sources */,
 				B50613B417552CC100D7C9A2 /* SHPViewController.m in Sources */,
+				B5B39D32184E85C3000D1282 /* SHPCell.m in Sources */,
 				B57F248D1760E006000FC1C4 /* SHPGererator.m in Sources */,
-				B57F24911760EE10000FC1C4 /* SHPSelectorController.m in Sources */,
-				B57F24941760EF18000FC1C4 /* SHPCell.m in Sources */,
-				B57F24971760EFEF000FC1C4 /* SHPLayout.m in Sources */,
 				B53113DB176E2AF800E5DF31 /* SHPThemeScrollController.m in Sources */,
-				B53113E0176E2E1C00E5DF31 /* SHPTheme.m in Sources */,
+				B5B39D33184E85C3000D1282 /* SHPLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
