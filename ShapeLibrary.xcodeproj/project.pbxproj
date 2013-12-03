@@ -18,13 +18,13 @@
 		B50613AE17552CC100D7C9A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50613AD17552CC100D7C9A2 /* Default-568h@2x.png */; };
 		B50613B117552CC100D7C9A2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50613AF17552CC100D7C9A2 /* MainStoryboard.storyboard */; };
 		B50613B417552CC100D7C9A2 /* SHPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50613B317552CC100D7C9A2 /* SHPViewController.m */; };
-		B53113DB176E2AF800E5DF31 /* SHPThemeScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53113DA176E2AF800E5DF31 /* SHPThemeScrollController.m */; };
-		B53113DD176E2B8400E5DF31 /* SHPThemeScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53113DC176E2B8400E5DF31 /* SHPThemeScrollController.xib */; };
-		B57F248D1760E006000FC1C4 /* SHPGererator.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F248C1760E006000FC1C4 /* SHPGererator.m */; };
 		B5B39D32184E85C3000D1282 /* SHPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D2A184E85C3000D1282 /* SHPCell.m */; };
 		B5B39D33184E85C3000D1282 /* SHPLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D2D184E85C3000D1282 /* SHPLayout.m */; };
 		B5B39D34184E85C3000D1282 /* SHPSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D2F184E85C3000D1282 /* SHPSelectorController.m */; };
 		B5B39D35184E85C3000D1282 /* SHPTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D31184E85C3000D1282 /* SHPTheme.m */; };
+		B5B39D3B184E8D89000D1282 /* SHPThemeScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B39D36184E8D89000D1282 /* SHPThemeScrollController.xib */; };
+		B5B39D3C184E8D89000D1282 /* SHPGererator.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D38184E8D89000D1282 /* SHPGererator.m */; };
+		B5B39D3D184E8D89000D1282 /* SHPThemeScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B39D39184E8D89000D1282 /* SHPThemeScrollController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,11 +44,6 @@
 		B50613B017552CC100D7C9A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B50613B217552CC100D7C9A2 /* SHPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPViewController.h; sourceTree = "<group>"; };
 		B50613B317552CC100D7C9A2 /* SHPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHPViewController.m; sourceTree = "<group>"; };
-		B53113D9176E2AF800E5DF31 /* SHPThemeScrollController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPThemeScrollController.h; sourceTree = "<group>"; };
-		B53113DA176E2AF800E5DF31 /* SHPThemeScrollController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPThemeScrollController.m; sourceTree = "<group>"; };
-		B53113DC176E2B8400E5DF31 /* SHPThemeScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHPThemeScrollController.xib; sourceTree = "<group>"; };
-		B57F248B1760E006000FC1C4 /* SHPGererator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPGererator.h; sourceTree = "<group>"; };
-		B57F248C1760E006000FC1C4 /* SHPGererator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPGererator.m; sourceTree = "<group>"; };
 		B5B39D29184E85C3000D1282 /* SHPCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPCell.h; sourceTree = "<group>"; };
 		B5B39D2A184E85C3000D1282 /* SHPCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPCell.m; sourceTree = "<group>"; };
 		B5B39D2B184E85C3000D1282 /* SHPGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPGlobals.h; sourceTree = "<group>"; };
@@ -58,6 +53,11 @@
 		B5B39D2F184E85C3000D1282 /* SHPSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPSelectorController.m; sourceTree = "<group>"; };
 		B5B39D30184E85C3000D1282 /* SHPTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPTheme.h; sourceTree = "<group>"; };
 		B5B39D31184E85C3000D1282 /* SHPTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPTheme.m; sourceTree = "<group>"; };
+		B5B39D36184E8D89000D1282 /* SHPThemeScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHPThemeScrollController.xib; sourceTree = "<group>"; };
+		B5B39D37184E8D89000D1282 /* SHPGererator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPGererator.h; sourceTree = "<group>"; };
+		B5B39D38184E8D89000D1282 /* SHPGererator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPGererator.m; sourceTree = "<group>"; };
+		B5B39D39184E8D89000D1282 /* SHPThemeScrollController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPThemeScrollController.m; sourceTree = "<group>"; };
+		B5B39D3A184E8D89000D1282 /* SHPThemeScrollController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPThemeScrollController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				B5B39D28184E85C3000D1282 /* Classes */,
-				B53113D8176E2ABE00E5DF31 /* ThemeScroll */,
-				B57F248A1760DFCC000FC1C4 /* ShapeGeneratro */,
 				B50613A617552CC100D7C9A2 /* SHPAppDelegate.h */,
 				B50613A717552CC100D7C9A2 /* SHPAppDelegate.m */,
 				B50613AF17552CC100D7C9A2 /* MainStoryboard.storyboard */,
@@ -131,28 +129,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B53113D8176E2ABE00E5DF31 /* ThemeScroll */ = {
-			isa = PBXGroup;
-			children = (
-				B53113D9176E2AF800E5DF31 /* SHPThemeScrollController.h */,
-				B53113DA176E2AF800E5DF31 /* SHPThemeScrollController.m */,
-				B53113DC176E2B8400E5DF31 /* SHPThemeScrollController.xib */,
-			);
-			name = ThemeScroll;
-			sourceTree = "<group>";
-		};
-		B57F248A1760DFCC000FC1C4 /* ShapeGeneratro */ = {
-			isa = PBXGroup;
-			children = (
-				B57F248B1760E006000FC1C4 /* SHPGererator.h */,
-				B57F248C1760E006000FC1C4 /* SHPGererator.m */,
-			);
-			name = ShapeGeneratro;
-			sourceTree = "<group>";
-		};
 		B5B39D28184E85C3000D1282 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B5B39D36184E8D89000D1282 /* SHPThemeScrollController.xib */,
+				B5B39D37184E8D89000D1282 /* SHPGererator.h */,
+				B5B39D38184E8D89000D1282 /* SHPGererator.m */,
+				B5B39D39184E8D89000D1282 /* SHPThemeScrollController.m */,
+				B5B39D3A184E8D89000D1282 /* SHPThemeScrollController.h */,
 				B5B39D29184E85C3000D1282 /* SHPCell.h */,
 				B5B39D2A184E85C3000D1282 /* SHPCell.m */,
 				B5B39D2B184E85C3000D1282 /* SHPGlobals.h */,
@@ -218,12 +202,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B39D3B184E8D89000D1282 /* SHPThemeScrollController.xib in Resources */,
 				B50613A217552CC100D7C9A2 /* InfoPlist.strings in Resources */,
 				B50613AA17552CC100D7C9A2 /* Default.png in Resources */,
 				B50613AC17552CC100D7C9A2 /* Default@2x.png in Resources */,
 				B50613AE17552CC100D7C9A2 /* Default-568h@2x.png in Resources */,
 				B50613B117552CC100D7C9A2 /* MainStoryboard.storyboard in Resources */,
-				B53113DD176E2B8400E5DF31 /* SHPThemeScrollController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,9 +224,9 @@
 				B5B39D34184E85C3000D1282 /* SHPSelectorController.m in Sources */,
 				B50613B417552CC100D7C9A2 /* SHPViewController.m in Sources */,
 				B5B39D32184E85C3000D1282 /* SHPCell.m in Sources */,
-				B57F248D1760E006000FC1C4 /* SHPGererator.m in Sources */,
-				B53113DB176E2AF800E5DF31 /* SHPThemeScrollController.m in Sources */,
 				B5B39D33184E85C3000D1282 /* SHPLayout.m in Sources */,
+				B5B39D3D184E8D89000D1282 /* SHPThemeScrollController.m in Sources */,
+				B5B39D3C184E8D89000D1282 /* SHPGererator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

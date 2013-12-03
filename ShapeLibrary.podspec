@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/fsaint/QuartzShapes.git' }
 
   s.source_files = 'Classes/*.{h,m}'
+  s.resources = 'Classes/*.xib'
 
   s.requires_arc = true
 end
