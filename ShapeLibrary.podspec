@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/*.{h,m}'
   s.resources = 'Classes/*.xib'
-
+  s.resources      = "Classes/**/*.{xib,png,plist,storyboard}"
   s.requires_arc = true
 end
