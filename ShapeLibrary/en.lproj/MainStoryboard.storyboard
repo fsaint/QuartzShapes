@@ -1,25 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="4">
             <objects>
                 <viewController id="2" customClass="SHPViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nct-od-cjw"/>
+                        <viewControllerLayoutGuide type="bottom" id="KEP-br-waG"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M04-eo-1an">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="PK1-wO-FTZ">
+                                        <barButtonItem key="leftBarButtonItem" title="Select Item" id="SqA-u1-RnN">
+                                            <connections>
+                                                <action selector="selectShape:" destination="2" id="Q02-Sl-ruR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uY2-tM-sCf">
+                                <rect key="frame" x="236" y="127" width="512" height="512"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="512" id="1NN-Hi-aOH"/>
+                                    <constraint firstAttribute="width" constant="512" id="Y9I-bk-nU6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M04-eo-1an" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="VEx-Rv-wTR"/>
+                            <constraint firstItem="M04-eo-1an" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="X0e-mE-igj"/>
+                            <constraint firstAttribute="trailing" secondItem="uY2-tM-sCf" secondAttribute="trailing" constant="20" symbolic="YES" id="ncb-5k-1LP"/>
+                            <constraint firstItem="uY2-tM-sCf" firstAttribute="top" secondItem="5" secondAttribute="top" constant="127" id="sOI-vA-Wcr"/>
+                            <constraint firstItem="M04-eo-1an" firstAttribute="top" secondItem="5" secondAttribute="top" id="wMl-Su-Oiz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="uY2-tM-sCf" id="drx-fh-J0O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-338" y="-215"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>

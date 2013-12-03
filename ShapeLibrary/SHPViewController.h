@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SHPSelectorController.h"
+#import "SHPThemeScrollController.h"
 
-@interface SHPViewController : UIViewController
+@interface SHPViewController : UIViewController <SHPSelectionDelegate>
+@property (nonatomic,strong) IBOutlet UIImageView *image;
+-(IBAction)selectShape:(id)sender;
 
 @end

@@ -18,6 +18,13 @@
 		B50613AE17552CC100D7C9A2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50613AD17552CC100D7C9A2 /* Default-568h@2x.png */; };
 		B50613B117552CC100D7C9A2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50613AF17552CC100D7C9A2 /* MainStoryboard.storyboard */; };
 		B50613B417552CC100D7C9A2 /* SHPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50613B317552CC100D7C9A2 /* SHPViewController.m */; };
+		B53113DB176E2AF800E5DF31 /* SHPThemeScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53113DA176E2AF800E5DF31 /* SHPThemeScrollController.m */; };
+		B53113DD176E2B8400E5DF31 /* SHPThemeScrollController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53113DC176E2B8400E5DF31 /* SHPThemeScrollController.xib */; };
+		B53113E0176E2E1C00E5DF31 /* SHPTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B53113DF176E2E1C00E5DF31 /* SHPTheme.m */; };
+		B57F248D1760E006000FC1C4 /* SHPGererator.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F248C1760E006000FC1C4 /* SHPGererator.m */; };
+		B57F24911760EE10000FC1C4 /* SHPSelectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F24901760EE10000FC1C4 /* SHPSelectorController.m */; };
+		B57F24941760EF18000FC1C4 /* SHPCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F24931760EF18000FC1C4 /* SHPCell.m */; };
+		B57F24971760EFEF000FC1C4 /* SHPLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F24961760EFEF000FC1C4 /* SHPLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,20 @@
 		B50613B017552CC100D7C9A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B50613B217552CC100D7C9A2 /* SHPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPViewController.h; sourceTree = "<group>"; };
 		B50613B317552CC100D7C9A2 /* SHPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHPViewController.m; sourceTree = "<group>"; };
+		B53113D9176E2AF800E5DF31 /* SHPThemeScrollController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPThemeScrollController.h; sourceTree = "<group>"; };
+		B53113DA176E2AF800E5DF31 /* SHPThemeScrollController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPThemeScrollController.m; sourceTree = "<group>"; };
+		B53113DC176E2B8400E5DF31 /* SHPThemeScrollController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHPThemeScrollController.xib; sourceTree = "<group>"; };
+		B53113DE176E2E1C00E5DF31 /* SHPTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPTheme.h; sourceTree = "<group>"; };
+		B53113DF176E2E1C00E5DF31 /* SHPTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPTheme.m; sourceTree = "<group>"; };
+		B53113E1176F495300E5DF31 /* SHPGlobals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPGlobals.h; sourceTree = "<group>"; };
+		B57F248B1760E006000FC1C4 /* SHPGererator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPGererator.h; sourceTree = "<group>"; };
+		B57F248C1760E006000FC1C4 /* SHPGererator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPGererator.m; sourceTree = "<group>"; };
+		B57F248F1760EE10000FC1C4 /* SHPSelectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPSelectorController.h; sourceTree = "<group>"; };
+		B57F24901760EE10000FC1C4 /* SHPSelectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPSelectorController.m; sourceTree = "<group>"; };
+		B57F24921760EF18000FC1C4 /* SHPCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPCell.h; sourceTree = "<group>"; };
+		B57F24931760EF18000FC1C4 /* SHPCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPCell.m; sourceTree = "<group>"; };
+		B57F24951760EFEF000FC1C4 /* SHPLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPLayout.h; sourceTree = "<group>"; };
+		B57F24961760EFEF000FC1C4 /* SHPLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +104,23 @@
 		B506139D17552CC100D7C9A2 /* ShapeLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B53113D8176E2ABE00E5DF31 /* ThemeScroll */,
+				B57F248A1760DFCC000FC1C4 /* ShapeGeneratro */,
 				B50613A617552CC100D7C9A2 /* SHPAppDelegate.h */,
 				B50613A717552CC100D7C9A2 /* SHPAppDelegate.m */,
 				B50613AF17552CC100D7C9A2 /* MainStoryboard.storyboard */,
 				B50613B217552CC100D7C9A2 /* SHPViewController.h */,
 				B50613B317552CC100D7C9A2 /* SHPViewController.m */,
+				B57F248F1760EE10000FC1C4 /* SHPSelectorController.h */,
+				B57F24901760EE10000FC1C4 /* SHPSelectorController.m */,
+				B57F24951760EFEF000FC1C4 /* SHPLayout.h */,
+				B57F24961760EFEF000FC1C4 /* SHPLayout.m */,
+				B57F24921760EF18000FC1C4 /* SHPCell.h */,
+				B57F24931760EF18000FC1C4 /* SHPCell.m */,
 				B506139E17552CC100D7C9A2 /* Supporting Files */,
+				B53113DE176E2E1C00E5DF31 /* SHPTheme.h */,
+				B53113DF176E2E1C00E5DF31 /* SHPTheme.m */,
+				B53113E1176F495300E5DF31 /* SHPGlobals.h */,
 			);
 			path = ShapeLibrary;
 			sourceTree = "<group>";
@@ -105,6 +137,25 @@
 				B50613AD17552CC100D7C9A2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B53113D8176E2ABE00E5DF31 /* ThemeScroll */ = {
+			isa = PBXGroup;
+			children = (
+				B53113D9176E2AF800E5DF31 /* SHPThemeScrollController.h */,
+				B53113DA176E2AF800E5DF31 /* SHPThemeScrollController.m */,
+				B53113DC176E2B8400E5DF31 /* SHPThemeScrollController.xib */,
+			);
+			name = ThemeScroll;
+			sourceTree = "<group>";
+		};
+		B57F248A1760DFCC000FC1C4 /* ShapeGeneratro */ = {
+			isa = PBXGroup;
+			children = (
+				B57F248B1760E006000FC1C4 /* SHPGererator.h */,
+				B57F248C1760E006000FC1C4 /* SHPGererator.m */,
+			);
+			name = ShapeGeneratro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +215,7 @@
 				B50613AC17552CC100D7C9A2 /* Default@2x.png in Resources */,
 				B50613AE17552CC100D7C9A2 /* Default-568h@2x.png in Resources */,
 				B50613B117552CC100D7C9A2 /* MainStoryboard.storyboard in Resources */,
+				B53113DD176E2B8400E5DF31 /* SHPThemeScrollController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +229,12 @@
 				B50613A417552CC100D7C9A2 /* main.m in Sources */,
 				B50613A817552CC100D7C9A2 /* SHPAppDelegate.m in Sources */,
 				B50613B417552CC100D7C9A2 /* SHPViewController.m in Sources */,
+				B57F248D1760E006000FC1C4 /* SHPGererator.m in Sources */,
+				B57F24911760EE10000FC1C4 /* SHPSelectorController.m in Sources */,
+				B57F24941760EF18000FC1C4 /* SHPCell.m in Sources */,
+				B57F24971760EFEF000FC1C4 /* SHPLayout.m in Sources */,
+				B53113DB176E2AF800E5DF31 /* SHPThemeScrollController.m in Sources */,
+				B53113E0176E2E1C00E5DF31 /* SHPTheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +332,12 @@
 		B50613B917552CC100D7C9A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: bNapkin Inc";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ShapeLibrary/ShapeLibrary-Prefix.pch";
 				INFOPLIST_FILE = "ShapeLibrary/ShapeLibrary-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "02178CA6-DDCC-43ED-BB6E-EF4054A5A01E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -301,6 +361,7 @@
 				B50613B917552CC100D7C9A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
