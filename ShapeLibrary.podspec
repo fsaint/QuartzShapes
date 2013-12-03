@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'ShapeLibrary'
   s.version      = '0.0.1'
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
 
   s.summary      = 'A simple example of drawing shapes with Quartz on iOS'
   s.homepage     = 'https://github.com/fsaint/QuartzShapes'
