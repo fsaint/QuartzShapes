@@ -22,6 +22,6 @@
 -(void)setShape:(SHPShape)shape theme:(SHPTheme *)theme{
     self.shape = shape;
     self.theme = theme;
-    self.shape_view.image = [SHPGererator makeShape:self.shape ofSize:self.frame.size fillColor:theme.fill_color borderColor:theme.border_color borderWidth:3.0 text:[NSString stringWithFormat:@"Don't worry %d, be happy",shape] textColor:theme.text_color font:theme.font];
+    self.shape_view.image = [SHPGererator makeShape:self.shape ofSize:self.frame.size fillColor:theme.fill_color borderColor:theme.border_color borderWidth:3.0 text:@"" textColor:theme.text_color font:theme.font];
 }
 @end

@@ -29,6 +29,11 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wTx-RL-Gdc">
+                                <rect key="frame" x="-13" y="234" width="761" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uY2-tM-sCf">
                                 <rect key="frame" x="236" y="127" width="512" height="512"/>
                                 <constraints>
@@ -37,7 +42,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="M04-eo-1an" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" id="VEx-Rv-wTR"/>
                             <constraint firstItem="M04-eo-1an" firstAttribute="leading" secondItem="5" secondAttribute="leading" id="X0e-mE-igj"/>
