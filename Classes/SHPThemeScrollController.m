@@ -21,26 +21,29 @@
 }
 
 -(int)numberOfPages{
-    return 5;
+    return 6;
 }
 
 -(UIViewController *)controlerForPage:(int)page{
     SHPSelectorController *selector = [[SHPSelectorController alloc] init];
     switch (page) {
         case 0:
-            selector.theme = [SHPTheme themeWithBorderRGB:0x378082 fillRGB:0x4EBBB5 textRGB:0x593939 font:[UIFont fontWithName: @"Verdana-Bold" size: [UIFont smallSystemFontSize]]];
+            selector.theme = [SHPTheme themeWithBorderRGB:0x699BF9 fillRGB:0x699BF9 textRGB:0x699BF9 font:[UIFont fontWithName: @"Verdana-Bold" size: [UIFont smallSystemFontSize]]];
             break;
         case 1:
-            selector.theme = [SHPTheme themeWithBorderRGB:0x05E4FB fillRGB:0x0DAEBE textRGB:0x54E29D font:[UIFont fontWithName: @"Courier-Bold" size: [UIFont smallSystemFontSize]]];
+            selector.theme = [SHPTheme themeWithBorderRGB:0x63CB39 fillRGB:0x63CB39 textRGB:0x63CB39 font:[UIFont fontWithName: @"Courier-Bold" size: [UIFont smallSystemFontSize]]];
             break;
         case 2:
-            selector.theme = [SHPTheme themeWithBorderRGB:0xB865B4 fillRGB:0xAADCF5 textRGB:0x093E53 font:[UIFont fontWithName: @"Palatino-Roman" size: [UIFont smallSystemFontSize]]];
+            selector.theme = [SHPTheme themeWithBorderRGB:0xEEDD25 fillRGB:0xEEDD25 textRGB:0xEEDD25 font:[UIFont fontWithName: @"Palatino-Roman" size: [UIFont smallSystemFontSize]]];
             break;
         case 3:
-            selector.theme = [SHPTheme themeWithBorderRGB:0xF9462F fillRGB:0x4F8B73F textRGB:0xDD6C32 font:[UIFont fontWithName: @"AppleGothic" size: [UIFont smallSystemFontSize]]];
+            selector.theme = [SHPTheme themeWithBorderRGB:0xEF9223 fillRGB:0xEF9223 textRGB:0xEF9223 font:[UIFont fontWithName: @"AppleGothic" size: [UIFont smallSystemFontSize]]];
             break;
         case 4:
-            selector.theme = [SHPTheme themeWithBorderRGB:0x957465 fillRGB:0x292838 textRGB:0xFCAC79 font:[UIFont fontWithName: @"Georgia-Italic" size: [UIFont smallSystemFontSize]]];
+            selector.theme = [SHPTheme themeWithBorderRGB:0xEA515C fillRGB:0xEA515C textRGB:0xEA515C font:[UIFont fontWithName: @"Georgia-Italic" size: [UIFont smallSystemFontSize]]];
+            break;
+        case 5:
+            selector.theme = [SHPTheme themeWithBorderRGB:0xBC43E3 fillRGB:0xBC43E3 textRGB:0xBC43E3 font:[UIFont fontWithName: @"Georgia-Italic" size: [UIFont smallSystemFontSize]]];
             break;
         default:
             break;
