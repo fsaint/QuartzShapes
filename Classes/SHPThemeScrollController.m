@@ -21,7 +21,7 @@
 }
 
 -(int)numberOfPages{
-    return 6;
+    return 8;
 }
 
 -(UIViewController *)controlerForPage:(int)page{
@@ -44,6 +44,12 @@
             break;
         case 5:
             selector.theme = [SHPTheme themeWithBorderRGB:0xBC43E3 fillRGB:0xBC43E3 textRGB:0xBC43E3 font:[UIFont fontWithName: @"Georgia-Italic" size: [UIFont smallSystemFontSize]]];
+            break;
+        case 6:
+            selector.theme = [SHPTheme themeWithBorderRGB:0xFFFFFF fillRGB:0xFFFFFF textRGB:0xFFFFFF font:[UIFont fontWithName: @"Georgia-Italic" size: [UIFont smallSystemFontSize]]];
+            break;
+        case 7:
+            selector.theme = [SHPTheme themeWithBorderRGB:0x434343 fillRGB:0x434343 textRGB:0x434343 font:[UIFont fontWithName: @"Georgia-Italic" size: [UIFont smallSystemFontSize]]];
             break;
         default:
             break;

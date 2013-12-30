@@ -13,16 +13,19 @@ enum {
     SHPRoudedRect = 1,
     SHPTriangle   = 2,
     SHPCicle      = 3,
-    SHPArrowUP   = 4,
-    SHPArrowDOWN = 5,
-    SHPArrowRIGHT   = 6,
-    SHPArrowLEFT   = 7,
-    SHPStar   = 8,
-    SHPHex = 9,
-    SHPNoShape = 10,
+    SHPArrow = 4,
+    SHPStar   = 5,
+    SHPHex = 6,
+    SHPBubbleLeft = 7,
+    SHPBubbleRight = 8,
+    SHPRect = 9,
+    SHPRectTriangleLeft = 10,
+    SHPRectTriangleRight = 11,
+
+    SHPNoShape = 12,
 };
 
-#define NUMBER_OF_SHAPES 11
+#define NUMBER_OF_SHAPES 12
 typedef NSUInteger SHPShape;
 
 @interface SHPGererator : NSObject
@@ -31,4 +34,8 @@ typedef NSUInteger SHPShape;
 
 
 +(UIImage *)makeShape:(SHPShape)shape ofSize:(CGSize)size fillColorRGB:(int)fill borderColorRGB:(int)border borderWidth:(CGFloat)width text:(NSString *)text textColorRGB:(int)text_color font:(UIFont *)font;
+
+
++(UIImage *)makeShape:(SHPShape)shape ofSize:(CGSize)size fillColorRGB:(int)fill borderColorRGB:(int)border borderWidth:(CGFloat)width text:(NSString *)text textColorRGB:(int)text_color font:(UIFont *)font;
+
 @end

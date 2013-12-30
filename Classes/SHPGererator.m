@@ -23,6 +23,17 @@
  */
 
 
++(UIBezierPath *)rectTrian:(CGSize)size{
+    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint: CGPointMake(5/40.0, 0)];
+    [bezierPath addLineToPoint: CGPointMake(5/40.0, 40/40.0)];
+    [bezierPath addLineToPoint: CGPointMake(35/40.0, 40/40.0)];
+    [bezierPath addLineToPoint: CGPointMake(5/40.0, 0)];
+    [bezierPath closePath];
+    [bezierPath applyTransform:CGAffineTransformMakeScale(size.width, size.height)];
+    return bezierPath;
+}
+
 
 +(UIBezierPath *)arrowRight:(CGSize)size{
     
@@ -98,6 +109,39 @@
     return bezierPath;
 }
 
++(UIBezierPath *)bubbleLeft:(CGSize)size{
+    UIBezierPath* bezier2Path = [UIBezierPath bezierPath];
+    [bezier2Path moveToPoint: CGPointMake(2, 0.57)];
+    [bezier2Path addLineToPoint: CGPointMake(2, 1.2)];
+    [bezier2Path addCurveToPoint: CGPointMake(1.8, 1.38) controlPoint1: CGPointMake(2, 1.3) controlPoint2: CGPointMake(1.91, 1.38)];
+    [bezier2Path addLineToPoint: CGPointMake(0.49, 1.38)];
+    [bezier2Path addLineToPoint: CGPointMake(0.27, 1.56)];
+    [bezier2Path addLineToPoint: CGPointMake(0.27, 1.38)];
+    [bezier2Path addLineToPoint: CGPointMake(0.2, 1.38)];
+    [bezier2Path addCurveToPoint: CGPointMake(0, 1.2) controlPoint1: CGPointMake(0.09, 1.38) controlPoint2: CGPointMake(-0, 1.3)];
+    [bezier2Path addLineToPoint: CGPointMake(0, 0.57)];
+    [bezier2Path addCurveToPoint: CGPointMake(0.2, 0.4) controlPoint1: CGPointMake(0, 0.48) controlPoint2: CGPointMake(0.09, 0.4)];
+    [bezier2Path addLineToPoint: CGPointMake(1.8, 0.4)];
+    [bezier2Path addCurveToPoint: CGPointMake(2, 0.57) controlPoint1: CGPointMake(1.91, 0.4) controlPoint2: CGPointMake(2, 0.48)];
+    [bezier2Path closePath];
+    
+    [bezier2Path applyTransform:CGAffineTransformMakeScale(size.width/2.0, size.height/2.0)];
+    return bezier2Path;
+    
+    
+
+}
+
++(UIBezierPath *)bubbleRight:(CGSize)size{
+
+    UIBezierPath *p = [SHPGererator bubbleLeft:size];
+    
+    CGAffineTransform trans = CGAffineTransformMakeScale(-1.0, 1.0);
+    trans  =  CGAffineTransformTranslate(trans, -size.width, 0.0);
+    [p applyTransform:trans];
+    
+    return p;
+}
 +(UIBezierPath *)shapeStar:(CGSize)size{
     UIBezierPath* starPath = [UIBezierPath bezierPath];
     [starPath moveToPoint: CGPointMake(0.5, 0)];
@@ -158,17 +202,17 @@
         case SHPCicle:
             return [UIBezierPath bezierPathWithOvalInRect:r];
             break;
-        case SHPArrowUP:
+        case SHPArrow:
             return [SHPGererator arrowUp:size];
             break;
-        case SHPArrowDOWN:
-            return [SHPGererator arrowDown:size];
+        case SHPBubbleLeft:
+            return [SHPGererator bubbleLeft:size];
             break;
-        case SHPArrowRIGHT:
-            return [SHPGererator arrowRight:size];
+        case SHPBubbleRight:
+            return [SHPGererator bubbleRight:size];
             break;
-        case SHPArrowLEFT:
-            return [SHPGererator arrowLeft:size];
+        case SHPRect:
+            return [UIBezierPath bezierPathWithRect: CGRectMake(0, 0.25* size.height, 1* size.width, 0.5 * size.height)];
             break;
         case SHPStar:
             return [SHPGererator shapeStar:size];
@@ -176,6 +220,20 @@
         case SHPHex:
             return [SHPGererator shapeHex:size];
             break;
+        case SHPRectTriangleLeft:
+            return [SHPGererator rectTrian:size];
+            break;
+            
+        case SHPRectTriangleRight:{
+            UIBezierPath *pat = [SHPGererator rectTrian:size];
+            CGAffineTransform trans = CGAffineTransformMakeScale(-1.0, 1.0);
+            trans  =  CGAffineTransformTranslate(trans, -size.width, 0.0);
+            [pat applyTransform:trans];
+
+                                 return pat;
+                    }
+            break;
+
         case SHPNoShape:
             return nil;
             break;
@@ -188,6 +246,7 @@
 +(CGRect)textAreaFor:(SHPShape)shape ofSize:(CGSize)size{
     CGRect r = CGRectZero;
     r.size = size;
+    /*
     switch (shape) {
             
         case SHPRectangle:
@@ -228,6 +287,7 @@
         default:
             break;
     }
+     */
     return r;
 }
 
@@ -247,7 +307,6 @@
     CGSize labelSize = [text sizeWithFont:font
                         constrainedToSize:constraintSize
                             lineBreakMode:NSLineBreakByWordWrapping];
-    NSLog(@"%d %d %d",minFontSize,fontSize,maxFontSize);
     // EDIT:  The next block is modified from the original answer posted in SO to consider the width in the decision. This works much better for certain labels that are too thin and were giving bad results.
     if( labelSize.height <= size.height && ABS(labelSize.height - size.height)<10.0){
         //NSLog(@"'%@' LabelSize: (%f x %f) Font imprint: (%f x %f)", text, labelSize.width, labelSize.height, size.width, size.height);
